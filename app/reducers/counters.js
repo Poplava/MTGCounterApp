@@ -1,16 +1,17 @@
 import * as CountersActionTypes from '../constants/CountersActionTypes';
 
 const VALUES = [10, 20, 30, 40, 50];
+const defaultValue = VALUES[1];
 
 const initialState = {
-  defaultValue: 20,
+  defaultValue,
   counters: [
     {
-      value: -18,
+      value: defaultValue,
       rotate: true
     },
     {
-      value: 20,
+      value: defaultValue,
       rotate: false
     }
   ]
