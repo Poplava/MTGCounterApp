@@ -1,6 +1,6 @@
 import React, { Component, PropTypes, View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 
-class Counter extends Component {
+class MiddleMenu extends Component {
   render() {
     const { reset, changeDefault, defaultValue } = this.props;
 
@@ -17,7 +17,7 @@ class Counter extends Component {
   }
 }
 
-Counter.propTypes = {
+MiddleMenu.propTypes = {
   reset: PropTypes.func.isRequired,
   changeDefault: PropTypes.func.isRequired
 };
@@ -47,4 +47,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default Counter;
+export default MiddleMenu;
