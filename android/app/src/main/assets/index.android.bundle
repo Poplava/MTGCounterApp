@@ -1533,7 +1533,7 @@ require('core-js/modules/web.immediate.js');
 require('core-js/modules/web.dom.iterable.js');
 module.exports = require('core-js/modules/$.core.js');
 });
-__d('core-js/modules/es5.js',["core-js/modules/$.js","core-js/modules/$.support-desc.js","core-js/modules/$.property-desc.js","core-js/modules/$.html.js","core-js/modules/$.dom-create.js","core-js/modules/$.has.js","core-js/modules/$.cof.js","core-js/modules/$.uid.js","core-js/modules/$.is-object.js","core-js/modules/$.fails.js","core-js/modules/$.def.js","core-js/modules/$.invoke.js","core-js/modules/$.array-methods.js","core-js/modules/$.an-object.js","core-js/modules/$.a-function.js","core-js/modules/$.to-object.js","core-js/modules/$.to-iobject.js","core-js/modules/$.to-integer.js","core-js/modules/$.to-index.js","core-js/modules/$.to-length.js","core-js/modules/$.iobject.js","core-js/modules/$.array-includes.js"],function(global, require, module, exports) {  'use strict';
+__d('core-js/modules/es5.js',["core-js/modules/$.js","core-js/modules/$.support-desc.js","core-js/modules/$.property-desc.js","core-js/modules/$.html.js","core-js/modules/$.dom-create.js","core-js/modules/$.has.js","core-js/modules/$.cof.js","core-js/modules/$.def.js","core-js/modules/$.invoke.js","core-js/modules/$.array-methods.js","core-js/modules/$.uid.js","core-js/modules/$.is-object.js","core-js/modules/$.an-object.js","core-js/modules/$.a-function.js","core-js/modules/$.to-object.js","core-js/modules/$.to-iobject.js","core-js/modules/$.to-integer.js","core-js/modules/$.to-index.js","core-js/modules/$.to-length.js","core-js/modules/$.iobject.js","core-js/modules/$.fails.js","core-js/modules/$.array-includes.js"],function(global, require, module, exports) {  'use strict';
 var $=require('core-js/modules/$.js'),
 SUPPORT_DESC=require('core-js/modules/$.support-desc.js'),
 createDesc=require('core-js/modules/$.property-desc.js'),
@@ -2430,7 +2430,7 @@ return O;};})():
 undefined),
 check:check};
 });
-__d('core-js/modules/es6.object.to-string.js',["core-js/modules/$.wks.js","core-js/modules/$.redef.js","core-js/modules/$.classof.js"],function(global, require, module, exports) {  'use strict';
+__d('core-js/modules/es6.object.to-string.js',["core-js/modules/$.classof.js","core-js/modules/$.wks.js","core-js/modules/$.redef.js"],function(global, require, module, exports) {  'use strict';
 
 var classof=require('core-js/modules/$.classof.js'),
 test={};
@@ -3098,7 +3098,7 @@ index=toLength(Math.min(arguments[1],that.length)),
 search=String(searchString);
 return that.slice(index,index + search.length) === search;}});
 });
-__d('core-js/modules/es6.array.from.js',["core-js/modules/$.ctx.js","core-js/modules/$.def.js","core-js/modules/$.to-object.js","core-js/modules/$.iter-call.js","core-js/modules/$.is-array-iter.js","core-js/modules/$.to-length.js","core-js/modules/core.get-iterator-method.js","core-js/modules/$.iter-detect.js"],function(global, require, module, exports) {  'use strict';
+__d('core-js/modules/es6.array.from.js',["core-js/modules/$.ctx.js","core-js/modules/$.def.js","core-js/modules/$.to-object.js","core-js/modules/$.is-array-iter.js","core-js/modules/$.to-length.js","core-js/modules/$.iter-call.js","core-js/modules/core.get-iterator-method.js","core-js/modules/$.iter-detect.js"],function(global, require, module, exports) {  'use strict';
 var ctx=require('core-js/modules/$.ctx.js'),
 $def=require('core-js/modules/$.def.js'),
 toObject=require('core-js/modules/$.to-object.js'),
@@ -3189,7 +3189,7 @@ while(length > index) result[index] = arguments[index++];
 result.length = length;
 return result;}});
 });
-__d('core-js/modules/es6.array.iterator.js',["core-js/modules/$.iterators.js","core-js/modules/$.to-iobject.js","core-js/modules/$.iter-define.js","core-js/modules/$.unscope.js","core-js/modules/$.iter-step.js"],function(global, require, module, exports) {  'use strict';
+__d('core-js/modules/es6.array.iterator.js',["core-js/modules/$.unscope.js","core-js/modules/$.iter-step.js","core-js/modules/$.iterators.js","core-js/modules/$.to-iobject.js","core-js/modules/$.iter-define.js"],function(global, require, module, exports) {  'use strict';
 var setUnscope=require('core-js/modules/$.unscope.js'),
 step=require('core-js/modules/$.iter-step.js'),
 Iterators=require('core-js/modules/$.iterators.js'),
@@ -3720,7 +3720,7 @@ entries?f(anObject(step = iterable[index])[0],step[1]):f(iterable[index]);}else
 for(iterator = iterFn.call(iterable);!(step = iterator.next()).done;) {
 call(iterator,f,step.value,entries);}};
 });
-__d('core-js/modules/$.microtask.js',["core-js/modules/$.global.js","core-js/modules/$.task.js","core-js/modules/$.cof.js"],function(global, require, module, exports) {  var global=require('core-js/modules/$.global.js'),
+__d('core-js/modules/$.microtask.js',["core-js/modules/$.global.js","core-js/modules/$.cof.js","core-js/modules/$.task.js"],function(global, require, module, exports) {  var global=require('core-js/modules/$.global.js'),
 macrotask=require('core-js/modules/$.task.js').set,
 Observer=global.MutationObserver || global.WebKitMutationObserver,
 process=global.process,
@@ -55778,7 +55778,8 @@ __d('MTGCounterApp/app/reducers/counters.js',["MTGCounterApp/app/constants/Count
 
 
 
-counters;function _interopRequireWildcard(obj){if(obj && obj.__esModule){return obj;}else {var newObj={};if(obj != null){for(var key in obj) {if(Object.prototype.hasOwnProperty.call(obj,key))newObj[key] = obj[key];}}newObj['default'] = obj;return newObj;}}var _constantsCountersActionTypes=require('MTGCounterApp/app/constants/CountersActionTypes.js');var CountersActionTypes=_interopRequireWildcard(_constantsCountersActionTypes);const VALUES=[10,20,30,40,50];const initialState={defaultValue:20,counters:[{value:-18,rotate:true},{value:20,rotate:false}]};function counters(){var state=arguments.length <= 0 || arguments[0] === undefined?initialState:arguments[0];var action=arguments.length <= 1 || arguments[1] === undefined?{}:arguments[1];
+
+counters;function _interopRequireWildcard(obj){if(obj && obj.__esModule){return obj;}else {var newObj={};if(obj != null){for(var key in obj) {if(Object.prototype.hasOwnProperty.call(obj,key))newObj[key] = obj[key];}}newObj['default'] = obj;return newObj;}}var _constantsCountersActionTypes=require('MTGCounterApp/app/constants/CountersActionTypes.js');var CountersActionTypes=_interopRequireWildcard(_constantsCountersActionTypes);const VALUES=[10,20,30,40,50];const defaultValue=VALUES[1];const initialState={defaultValue:defaultValue,counters:[{value:defaultValue,rotate:true},{value:defaultValue,rotate:false}]};function counters(){var state=arguments.length <= 0 || arguments[0] === undefined?initialState:arguments[0];var action=arguments.length <= 1 || arguments[1] === undefined?{}:arguments[1];
 switch(action.type){
 case CountersActionTypes.COUNTERS_INCREMENT:
 return Object.assign({},state,{
