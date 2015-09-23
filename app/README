@@ -1,0 +1,5 @@
+See #2703 for more discussion on this topic.
+
+Basically, you need to manually download the Android bundle (e.g. http://localhost:8081/index.android.bundle)
+and put it in android/app/src/main/assets.
+./gradlew assembleRelease should work after that.
